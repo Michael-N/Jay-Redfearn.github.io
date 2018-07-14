@@ -1,0 +1,56 @@
+@import 'variables';
+
+//==== Splash
+.splash{  
+    background-color:$main-bg;
+    background-image: url(https://static.wixstatic.com/media/b25dd1_3fdcf0a9a2fe48e7ae4e90f1d42653be~mv2_d_4000_2669_s_4_2.jpeg/v1/fill/w_1886,h_650,al_t,q_85,usm_0.66_1.00_0.01/b25dd1_3fdcf0a9a2fe48e7ae4e90f1d42653be~mv2_d_4000_2669_s_4_2.jpeg);
+    background-size: cover;
+
+}
+
+
+
+#sp-photo{
+    background-color: transparent !important;
+
+    .container{
+        .splash-text{
+            font-family: $font-stack-fancy;
+            color:$font-color; 
+        }
+
+        h2{
+            font-family: $font-stack;
+            color:$font-color; 
+        }
+
+        #splash-motto{
+            font-family: $font-stack !important;
+            color:$font-color !important; 
+        }
+    }
+}
+
+//==== Aside Info
+.splash-info{
+    font-family: $font-stack;
+    color: $font-color;
+    background-color: $main-bg;
+    padding: 70px 50px 50px 50px;
+    p{
+       margin-bottom: 20px; 
+    }
+
+    a{
+        height: auto;
+        width: 89px;
+        padding:7px;
+        display:inline-block;
+        background-color:$secondary-color;
+        
+    }
+    
+    a:hover{
+        background-color:adjust-color($color: $secondary-color, $lightness: 10%);
+    }
+}

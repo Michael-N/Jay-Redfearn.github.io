@@ -1,0 +1,33 @@
+@import 'variables';
+
+.about{
+    font-family: $font-stack;
+    color: $font-color;
+    background-color: $main-bg;
+
+     .about-textbox, .about-logobox {
+        font-size:1.3em;
+    }
+
+    .about-title{
+        padding: 50px 50px 0px 50px;
+    }
+
+    .about-textbox{
+        padding:25px 50px 50px 50px;
+        p{
+            #about-signature{
+                font-family: $font-stack-fancy;
+            }
+        }
+    }
+
+    .about-logobox{
+        padding:25px 50px 50px 50px;
+        #about-image{
+            width:100%;
+        }
+    }
+
+
+}
