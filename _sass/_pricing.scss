@@ -1,0 +1,27 @@
+@import 'variables';
+
+#pricing{
+    background-color: $main-bg;
+    color:$font-color;
+    font-family: $font-stack;
+
+    .pricing-title{
+        padding: 0px 50px 0px 50px;
+    }
+
+    .pricing-1{
+        padding: 25px 50px 0px 50px;
+        font-family: $font-stack;
+    }
+
+    .pricing-2{
+        padding: 25px 50px 0px 50px;
+        .pricing-list{
+            font-size: $font-size-md;
+
+            li{
+                padding-bottom: 35px;
+            }
+        }
+    }
+}

@@ -41,16 +41,19 @@
        margin-bottom: 20px; 
     }
 
-    a{
+    #splash-price-link{
         height: auto;
         width: 89px;
         padding:7px;
         display:inline-block;
         background-color:$secondary-color;
-        
+        font-family: $font-stack;
+        color: $font-color;
+        text-decoration: none;
     }
     
-    a:hover{
+    #splash-price-link:hover{
         background-color:adjust-color($color: $secondary-color, $lightness: 10%);
+        color: $font-color;
     }
 }

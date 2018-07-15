@@ -1,1 +1,41 @@
-<div></div>
+<div id="pricing" class="priceing row">
+     
+    <!--=== Title ===-->
+    <div class="pricing-title col-md-12">
+            <h3>Screen Repair Pricing</h3>
+            <hr class="my-4">
+    </div>
+    
+    <!--=== Part 1: Pick Model ===-->
+    <div class="pricing-1 col-md-6">
+        <!--= Prices =-->
+        <table class="table table-dark">
+            <thead>
+                     <tr>
+                        <th scope="col">Model</th>
+                        <th scope="col">Price</th>
+                     </tr>
+                </thead>
+                <tbody>
+                    {% for item in site.data.listed_prices %}
+                        <tr>
+                            <th scope="row">{{item.model}}</th>
+                            <td>{{item.price}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+        </table>
+    </div>
+
+    <!--=== Part 2: Additional fees ===-->
+    <div class="pricing-2 col-md-6">
+        <h4>Additional Charges & info</h4>
+        <hr class="my-4">
+        <ul class="pricing-list">
+            {% for item in site.data.additional_charges_and_info %}
+                <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+</div>
