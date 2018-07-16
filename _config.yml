@@ -22,3 +22,6 @@ markdown: kramdown
 
 include:
   - _data 
+
+
+  #note to self: jekyll serve --host 0.0.0.0     is really usefull...

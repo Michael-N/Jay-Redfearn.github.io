@@ -9,18 +9,24 @@
     <div class="contact-form col-md-6">
         <form action= {{site.data.additional_settings.send_form_requests_to }} class="needs-validation" novalidate method="POST" >
                 <input type="hidden" name="_subject" value="Phone Repair Request" />
-                <p> <span class="red">*</span> specifies a required field</p>
+                <p id="contact-require"> <span class="red">*</span> specifies a required field</p>
                 <div class="form-row">
                     <!--= Name =-->
                     <div class="form-group col-6">
                         <label for="contact-name"><span class="red">*</span> First & Last Name</label>
                         <input class="form-control" id="contact-name" type="text" name="name" placeholder=" First & Last Name" required>
+                        <div class="invalid-feedback">
+                            Please provide your name
+                        </div>
                     </div>
                             
                     <!--= Email =-->
                     <div class="form-group col-6">
                         <label for="contact-email"><span class="red">*</span> Email address</label>
                         <input type="email" name="_replyto" class="form-control" id="contact-email" placeholder="name@example.com" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email
+                        </div>
                     </div>
                 </div>
                 
@@ -29,12 +35,15 @@
                     <div class="form-group col-6">
                             <label for="contact-name"><span class="red">*</span> Phone Number</label>
                             <input class="form-control" id="contact-phone" type="text" name="phone" placeholder="example 9186090512" required>
-                    </div>
+                            <div class="invalid-feedback">
+                                Please provide a valid phone number
+                            </div>
+                        </div>
 
                     <!--= Model =-->
                     <div class="form-group col-6">
                             <label for="contact-model"><span class="red">*</span> Phone Model</label>
-                            <select id="contact-model" class="form-control" name="Phone Model" required>
+                            <select id="contact-model" class="form-control" name="Phone Model" >
                                     {% for item in site.data.listed_prices %}
                                         <option>{{item.model}}</option>
                                     {% endfor %}
@@ -72,4 +81,5 @@
             {% include verdigris_map.html %}
     </div>
 
+    {% include validation_script.html %}
 </div>
