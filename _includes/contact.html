@@ -1,1 +1,75 @@
-<div></div>
+<div class="contact row">
+    <!--=== Title ===-->
+    <div class="contact-title col-md-12">
+        <h3>Contact Me</h3>
+        <hr class="my-4">
+    </div>
+
+    <!--=== Form ===-->
+    <div class="contact-form col-md-6">
+        <form action= {{site.data.additional_settings.send_form_requests_to }} class="needs-validation" novalidate method="POST" >
+                <input type="hidden" name="_subject" value="Phone Repair Request" />
+                <p> <span class="red">*</span> specifies a required field</p>
+                <div class="form-row">
+                    <!--= Name =-->
+                    <div class="form-group col-6">
+                        <label for="contact-name"><span class="red">*</span> First & Last Name</label>
+                        <input class="form-control" id="contact-name" type="text" name="name" placeholder=" First & Last Name" required>
+                    </div>
+                            
+                    <!--= Email =-->
+                    <div class="form-group col-6">
+                        <label for="contact-email"><span class="red">*</span> Email address</label>
+                        <input type="email" name="_replyto" class="form-control" id="contact-email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <!--= Phone Number=-->
+                    <div class="form-group col-6">
+                            <label for="contact-name"><span class="red">*</span> Phone Number</label>
+                            <input class="form-control" id="contact-phone" type="text" name="phone" placeholder="example 9186090512" required>
+                    </div>
+
+                    <!--= Model =-->
+                    <div class="form-group col-6">
+                            <label for="contact-model"><span class="red">*</span> Phone Model</label>
+                            <select id="contact-model" class="form-control" name="Phone Model" required>
+                                    {% for item in site.data.listed_prices %}
+                                        <option>{{item.model}}</option>
+                                    {% endfor %}
+                                    <option>Other (specify in message)</option>
+                            </select>
+                    </div>
+
+                    <!--= Message =-->
+                    <div class="form-group col-12">
+                            <label for="contact-msg">Message</label>
+                            <textarea class="form-control" id="contact-msg" rows="2" name="message"></textarea>
+                    </div>
+
+                    <!--= Submit =-->
+                    <button class="btn btn-dark" type="submit">Submit</button>
+                </div>
+        </form>
+        <p>
+            We will not distribute any information sent and it will be kept private in accordance with
+            the private policy of <span><a href="http://docs.formspree.io/files/privacy.pdf"> Formspree.io</a></span>. 
+            It will only be used to contact you. <b>By submitting you accept this policy!</b>
+            
+        </p>
+    </div>
+    
+    <!--=== Contact Info ===-->
+    <div class="contact-info col-md-6">
+            <h4> Jay H. Redfearn III</h4>
+            <hr class="my-4">
+                Cell: <a href="tel:9186090512">(918) 609-0512</a> &nbsp;&nbsp;&nbsp;
+                Email: <a href="mailto:redfernphonerepair@gmail.com" subject="Phone Repair">redfernphonerepair@gmail.com</a>
+            <hr class="my-4">
+                Proudly Located in <span><a href="https://goo.gl/maps/R5oLrcxfNwL2">Verdigris, OK 79019</a></span>
+            <hr class="my-4">
+            {% include verdigris_map.html %}
+    </div>
+
+</div>

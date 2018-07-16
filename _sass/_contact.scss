@@ -1,0 +1,26 @@
+@import 'variables';
+
+.red{
+    color:red;
+}
+.contact{
+    background-color: $main-bg;
+    font-family: $font-stack;
+    color:$font-color; 
+    font-size: $font-size-md;
+    
+    .contact-title{
+        padding: 0px 50px 0px 50px;
+
+    }
+
+    .contact-form{
+        padding: 0px 50px 0px 50px;
+
+        p{
+            font-size: 0.8em;
+            padding: 10px 0px 25px 0px;
+        }
+    }
+    
+}

@@ -4,6 +4,7 @@
     background-color: $main-bg;
     color:$font-color;
     font-family: $font-stack;
+    
 
     .pricing-title{
         padding: 0px 50px 0px 50px;
@@ -21,7 +22,14 @@
 
             li{
                 padding-bottom: 35px;
+                
             }
         }
+    }
+
+    .pricing-bottom{
+        text-align: center;
+        padding-top:15px;
+        padding-bottom:25px;
     }
 }

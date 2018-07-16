@@ -1,0 +1,17 @@
+@import 'variables';
+
+.footer{
+
+    font-family: $font-stack;
+    color:$font-color;
+    background-color: $main-bg;
+
+    .footer-cred, .footer-cred:hover{
+        padding:50px 50px 0px 50px;
+        float: right !important;
+        a{
+            color:$font-color;
+            text-decoration: none;
+        }   
+    }
+}
