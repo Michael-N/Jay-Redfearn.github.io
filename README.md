@@ -28,4 +28,4 @@
 ```
 
 ### In General
-- Most of the things that may need to be frequently changed can be done by editing files from the _data directory.
+- Most of the things that may need to be frequently changed can be done by editing files from the ```_data``` directory.
