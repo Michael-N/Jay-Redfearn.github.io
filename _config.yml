@@ -6,14 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Welcome to Redfearn Phone Repair! We do reliable phone repairs for the Tulsa, OK metro for a fair price. We are based out of the University of Tulsa.
+title: 'Redfearn Phone Repair Inc.'
+email: 'redfearnphonerepair@gmail.com'
+description: " Welcome to Redfearn Phone Repair! We do reliable phone repairs for the Tulsa, OK metro for a fair price. We are based out of the University of Tulsa."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://www.redfearnphonerepair.com" # the base hostname & protocol for your site
+twitter_username: ""
+github_username: ""
 
 # Build settings
 markdown: kramdown
