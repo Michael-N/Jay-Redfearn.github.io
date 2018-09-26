@@ -1,0 +1,13 @@
+<div id="qaa" class="row">
+    <!--=== Title ===-->
+    <div class="qaa-title col-md-12">
+        <h3>Question & Answers</h3>
+        <hr class="my-4">
+    </div>
+    <!--=== Q&A ===-->
+    {% for item in site.data.questions_answers %}
+        <div class="col-md-6 qaa-qa" >Q: {{item.question}}</div>
+        <div class="col-md-6 qaa-qa">A: {{item.answer}}</div>
+    {% endfor %}
+    <div id="qaa-padding"></div>
+</div>

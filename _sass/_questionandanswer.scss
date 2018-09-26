@@ -1,0 +1,19 @@
+// instead of the long prefix questionandanswer use the abbriviation   qaa   
+@import 'variables';
+
+#qaa{
+    background-color: $main-bg;
+    color:$font-color;
+    font-family: $font-stack;
+    
+    .qaa-title,div{
+        padding: 0px 50px 0px 50px;
+    }
+    .qaa-qa{
+        font-size: $font-size-md;
+    }
+    #qaa-padding{
+        padding: 0px 50px 25px 50px;
+    }
+}
+

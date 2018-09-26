@@ -25,10 +25,26 @@
     
     .contact-info{
         padding:0px 50px 0px 50px;
-
-        #contact-map{
-            
+        a{
+            text-decoration: none;
+            color:$font-color;
         }
+        a:hover{
+            text-decoration: none;
+            color:$font-color;
+        }
+        .contact-info-facebook{
+            display: inline-block;
+            height:30px;
+            width:30px;
+            background-size: cover;
+            background-image: url('/assets/facebook.svg');
+        }
+        .contact-info-caption{
+            height:30;
+            display: inline-block;
+        }
+
     }
 }
 
